@@ -46,3 +46,5 @@ uvicorn main:app --reload
 3. Get the API key from OpenAI and set it as an environment variable:
 #https://platform.openai.com/api-keys   you can get openai api key from here, make sure you have an account and money on it, like 1$
 
+4. Please read this ducoment if you want to use function calling
+https://platform.openai.com/docs/guides/function-calling?api-mode=chat&example=get-weather
