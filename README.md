@@ -18,6 +18,17 @@ curl -X POST http://localhost:8000/api/chat \
 
 Alternatively test on Postman
 
+```bash
+curl -X POST http://localhost:8000/api/chat \
+-H "Content-Type: application/json" \
+-d '{
+  "messages": [{
+    "role": "user",
+    "content": "What's the weather like in Paris today?"
+  }]
+}'
+```
+![alt text](image-1.png)
 ### To run without Docker:
 
 1. Install dependencies:
@@ -32,4 +43,6 @@ pip install -r requirements.txt
 uvicorn main:app --reload
 ```
 
+3. Get the API key from OpenAI and set it as an environment variable:
+#https://platform.openai.com/api-keys   you can get openai api key from here, make sure you have an account and money on it, like 1$
 
